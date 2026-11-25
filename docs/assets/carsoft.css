@@ -94,3 +94,11 @@
 @media screen and (max-width: 76.2344em) {
   .md-header .md-search__input { background: transparent; }
 }
+
+/* Logo também no celular e em telas médias (o tema esconde por padrão) */
+@media screen and (max-width: 76.2344em) {
+  .md-header__button.md-logo { display: inline-block; }
+  .md-header__button.md-logo img { height: 1.4rem; }
+  .md-header__title { display: none; }
+}
+.md-header .md-header__button, .md-header .md-header__title { color: #1A1A12; }

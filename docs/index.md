@@ -1,5 +1,5 @@
 ---
-title: Central de Ajuda Finax
+title: Início
 hide:
   - navigation
   - toc
