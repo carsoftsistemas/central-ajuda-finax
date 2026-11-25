@@ -1,0 +1,123 @@
+[
+  {
+    "saida": "docs/img/pagar/abrir-tela.png",
+    "print": "prints/pagar/principal.png",
+    "tela": "Tela principal",
+    "campos": [
+      {"tipo": "botao", "rotulo": "Pagar", "box": [20, 58, 120, 50]},
+      {"tipo": "botao", "rotulo": "Receber", "box": [150, 58, 120, 50]},
+      {"tipo": "botao", "rotulo": "Principal", "box": [40, 170, 160, 44]},
+      {"tipo": "botao", "rotulo": "Contas à Pagar", "box": [210, 170, 190, 44]},
+      {"tipo": "botao", "rotulo": "Contas à Pagar", "box": [60, 260, 200, 140]},
+      {"tipo": "botao", "rotulo": "Baixa Múltipla Pag.", "box": [290, 260, 230, 140]},
+      {"tipo": "botao", "rotulo": "Gera Provisões", "box": [550, 260, 200, 140]}
+    ],
+    "marcas": [
+      {"n": 1, "box": [60, 260, 200, 140]},
+      {"n": 2, "box": [20, 58, 120, 50]}
+    ],
+    "recorte": [0, 0, 960, 540]
+  },
+  {
+    "saida": "docs/img/pagar/incluir-titulo.png",
+    "print": "prints/pagar/incluir-preenchido.png",
+    "tela": "Manutenção de Contas a Pagar  ·  Incluindo",
+    "campos": [
+      {"tipo": "botao", "rotulo": "Incluir", "box": [20, 58, 110, 50]},
+      {"tipo": "botao", "rotulo": "Alterar", "box": [140, 58, 110, 50]},
+      {"tipo": "botao", "rotulo": "Excluir", "box": [260, 58, 110, 50]},
+      {"tipo": "botao", "rotulo": "Clonar", "box": [380, 58, 110, 50]},
+      {"tipo": "botao", "rotulo": "Sair", "box": [500, 58, 110, 50]},
+      {"tipo": "texto", "rotulo": "Dados do título", "box": [60, 135, 0, 0]},
+      {"rotulo": "Valor Principal", "box": [60, 210, 220, 42], "valor": "150,00"},
+      {"rotulo": "Parcelas", "box": [310, 210, 90, 42], "valor": "1"},
+      {"rotulo": "Conta Débito", "box": [440, 210, 380, 42], "valor": "2614  ASSINATURAS", "lupa": true},
+      {"rotulo": "Credor/Fornecedor", "box": [60, 310, 760, 42], "valor": "ADOBE", "lupa": true},
+      {"tipo": "texto", "rotulo": "Dados da parcela", "box": [60, 420, 0, 0]},
+      {"rotulo": "Vencimento Original", "box": [60, 495, 220, 42], "valor": "30/11/2026"},
+      {"rotulo": "Vencimento Programado", "box": [310, 495, 220, 42], "valor": "30/11/2026"},
+      {"rotulo": "Conta Financeira", "box": [560, 495, 300, 42], "valor": "146  Conta Hotel Modelo", "lupa": true},
+      {"rotulo": "Histórico", "box": [60, 595, 800, 42], "valor": "006  PAGTO REF.", "lupa": true},
+      {"rotulo": "Histórico Complementar 1", "box": [60, 695, 800, 42]},
+      {"tipo": "botao", "rotulo": "Ok", "box": [1000, 210, 140, 50]},
+      {"tipo": "botao", "rotulo": "Cancela", "box": [1160, 210, 140, 50]}
+    ],
+    "marcas": [
+      {"n": 1, "box": [20, 58, 110, 50]},
+      {"n": 2, "box": [60, 210, 220, 42]},
+      {"n": 3, "box": [60, 310, 800, 42]},
+      {"n": 4, "box": [60, 495, 220, 42]},
+      {"n": 5, "box": [560, 495, 340, 42]},
+      {"n": 6, "box": [440, 210, 420, 42]},
+      {"n": 7, "box": [60, 595, 840, 42]},
+      {"n": 8, "box": [1000, 210, 140, 50]}
+    ],
+    "recorte": [0, 0, 1340, 780]
+  },
+  {
+    "saida": "docs/img/pagar/baixa-manual.png",
+    "print": "prints/pagar/baixa-manual.png",
+    "tela": "Manutenção de Contas a Pagar",
+    "campos": [
+      {"tipo": "janela", "rotulo": "Baixa Manual", "box": [200, 150, 820, 560]},
+      {"rotulo": "Valor do Pagamento", "box": [250, 270, 240, 42], "valor": "150,00"},
+      {"rotulo": "Data do Pagamento", "box": [530, 270, 240, 42], "valor": "24/11/2026"},
+      {"rotulo": "Tipo Documento", "box": [250, 380, 300, 42], "valor": "PX-Pix"},
+      {"rotulo": "Doc/Cheque", "box": [590, 380, 180, 42]},
+      {"rotulo": "Série", "box": [810, 380, 120, 42]},
+      {"tipo": "botao", "rotulo": "Confirma", "box": [600, 620, 170, 52]},
+      {"tipo": "botao", "rotulo": "Cancela", "box": [790, 620, 170, 52]}
+    ],
+    "marcas": [
+      {"n": 1, "box": [250, 270, 240, 42]},
+      {"n": 2, "box": [530, 270, 240, 42]},
+      {"n": 3, "box": [250, 380, 300, 42]},
+      {"n": 4, "box": [590, 380, 340, 42]},
+      {"n": 5, "box": [600, 620, 170, 52]}
+    ],
+    "recorte": [140, 100, 960, 660]
+  },
+  {
+    "saida": "docs/img/pagar/baixa-multipla.png",
+    "print": "prints/pagar/baixa-multipla.png",
+    "tela": "Baixa Múltipla de Títulos a Pagar",
+    "campos": [
+      {"rotulo": "Data Vencimento (de)", "box": [40, 170, 200, 42], "valor": "01/11/2026"},
+      {"rotulo": "até", "box": [260, 170, 200, 42], "valor": "30/11/2026"},
+      {"tipo": "botao", "rotulo": "Aplicar Filtro (F9)", "box": [500, 166, 230, 50]},
+      {"tipo": "janela", "rotulo": "Parcelas em aberto", "box": [40, 260, 1240, 560]},
+      {"rotulo": "Conta Financeira da Baixa", "box": [1340, 200, 360, 42], "valor": "146", "lupa": true},
+      {"rotulo": "Tipo Documento", "box": [1340, 300, 360, 42], "valor": "PX-Pix"},
+      {"rotulo": "Data da Baixa", "box": [1340, 400, 360, 42], "valor": "24/11/2026"},
+      {"tipo": "botao", "rotulo": "Replicar (F10)", "box": [1340, 480, 220, 50]},
+      {"tipo": "botao", "rotulo": "Retirar da Baixa", "box": [1340, 560, 220, 50]},
+      {"tipo": "botao", "rotulo": "Efetuar baixa (F12)", "box": [1340, 760, 260, 54]}
+    ],
+    "marcas": [
+      {"n": 1, "box": [40, 170, 420, 42]},
+      {"n": 2, "box": [500, 166, 230, 50]},
+      {"n": 3, "box": [1340, 200, 400, 242]},
+      {"n": 4, "box": [1340, 480, 220, 50]},
+      {"n": 5, "box": [1340, 560, 220, 50]},
+      {"n": 6, "box": [1340, 760, 260, 54]}
+    ],
+    "recorte": [0, 0, 1920, 880]
+  },
+  {
+    "saida": "docs/img/pagar/matriz-provisao.png",
+    "print": "prints/pagar/matriz-provisao.png",
+    "tela": "Manutenção de Contas a Pagar  ·  Incluindo",
+    "campos": [
+      {"tipo": "texto", "rotulo": "** MATRIZ DE PROVISÃO **", "box": [60, 135, 0, 0], "cor_rgb": [200, 40, 40]},
+      {"rotulo": "Valor Principal", "box": [60, 210, 220, 42], "valor": "90,00"},
+      {"rotulo": "Provisão", "box": [320, 210, 42, 42], "valor": "✓"},
+      {"rotulo": "Vencimento Original", "box": [60, 330, 220, 42], "valor": "15/01/1001"},
+      {"rotulo": "Vencimento Programado", "box": [310, 330, 220, 42], "valor": "15/01/1001"}
+    ],
+    "marcas": [
+      {"n": 1, "box": [60, 330, 220, 42]},
+      {"n": 2, "box": [60, 130, 330, 34]}
+    ],
+    "recorte": [0, 0, 760, 430]
+  }
+]

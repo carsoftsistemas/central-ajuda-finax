@@ -1,0 +1,88 @@
+site_name: Central de Ajuda Finax
+site_description: Manual do sistema Finax, da Carsoft Sistemas. Passo a passo com imagens e vídeos.
+site_author: Carsoft Sistemas
+site_url: https://ajuda.carsoft.com.br/
+copyright: © 2026 Carsoft Sistemas · Manual do Finax
+
+use_directory_urls: false
+
+theme:
+  name: material
+  language: pt-BR
+  custom_dir: overrides
+  font:
+    text: Inter
+    code: Roboto Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Modo escuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Modo claro
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - toc.follow
+  logo: assets/logo-carsoft.png
+  favicon: assets/favicon.png
+
+extra_css:
+  - assets/carsoft.css
+
+extra_javascript:
+  - assets/carsoft.js
+
+plugins:
+  - search:
+      lang: pt
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      title: Nesta página
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.keys
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Início: index.md
+  - Contas a Pagar:
+      - pagar/index.md
+      - Cadastrar títulos:
+          - Incluir um título: pagar/incluir-titulo.md
+          - Incluir um título parcelado: pagar/titulo-parcelado.md
+          - Alterar um título: pagar/alterar-titulo.md
+          - Ratear em várias contas (Itens): pagar/itens.md
+          - Anexar documentos: pagar/documentos.md
+          - Clonar um título: pagar/clonar-titulo.md
+          - Excluir um título: pagar/excluir-titulo.md
+      - Pagamentos:
+          - Baixar uma parcela: pagar/baixar-parcela.md
+          - Baixa múltipla: pagar/baixa-multipla.md
+          - Consolidar títulos: pagar/consolidar.md
+      - Provisões mensais: pagar/provisoes.md
+  - Mensagens do sistema: mensagens.md
+  - Dicas e atalhos: dicas.md
+  - Novidades: novidades.md

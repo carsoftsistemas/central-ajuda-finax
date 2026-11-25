@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% if not page.is_homepage %}
+  <div class="cs-acoes">
+    <button type="button" class="md-button cs-pdf" onclick="window.print()" title="Abre a janela de impressão. Escolha &quot;Salvar como PDF&quot; no destino.">
+      {% include ".icons/material/file-pdf-box.svg" %} Salvar em PDF
+    </button>
+  </div>
+  {% endif %}
+
+  <div class="cs-cabecalho-impressao">
+    <strong>Carsoft Sistemas · Manual do Finax</strong>
+    <span>ajuda.carsoft.com.br</span>
+  </div>
+
+  {{ super() }}
+
+  {% if page.meta.atualizado %}
+  <p class="cs-atualizado">
+    Atualizado em {{ page.meta.atualizado }}{% if page.meta.versao %} · Finax {{ page.meta.versao }}{% endif %}
+  </p>
+  {% endif %}
+{% endblock %}

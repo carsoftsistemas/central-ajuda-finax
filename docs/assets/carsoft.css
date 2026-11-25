@@ -1,0 +1,96 @@
+/* Identidade Carsoft — mesmas cores dos vídeos tutoriais */
+:root,
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #3AA3A5;
+  --md-primary-fg-color--light: #5BB8BA;
+  --md-primary-fg-color--dark: #2B7E80;
+  --md-accent-fg-color: #F27822;
+  --cs-verde: #3AA3A5;
+  --cs-laranja: #F27822;
+  --cs-preto: #1A1A12;
+}
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #2B7E80;
+  --md-accent-fg-color: #F7944D;
+  --md-hue: 185;
+}
+
+.md-typeset h1 { font-weight: 700; color: var(--md-default-fg-color); }
+.md-typeset h2 { font-weight: 700; }
+
+/* Marcadores numerados: iguais aos círculos das imagens */
+.md-typeset .n {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 1.55em; height: 1.55em; border-radius: 50%;
+  background: var(--cs-verde); color: #fff;
+  font-weight: 700; font-size: .78em; line-height: 1;
+  vertical-align: .12em; margin-right: .25em;
+}
+
+/* Imagens das telas */
+.md-typeset figure.tela { margin: 1.2em 0 1.6em; }
+.md-typeset figure.tela img {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 6px; box-shadow: 0 2px 10px rgba(0,0,0,.08);
+  cursor: zoom-in;
+}
+.md-typeset figure.tela figcaption {
+  font-size: .72rem; color: var(--md-default-fg-color--light); max-width: none;
+}
+
+/* Ampliar imagem ao clicar */
+.cs-zoom {
+  position: fixed; inset: 0; z-index: 999; background: rgba(10,14,16,.88);
+  display: flex; align-items: center; justify-content: center; cursor: zoom-out; padding: 2vw;
+}
+.cs-zoom img { max-width: 100%; max-height: 100%; border-radius: 6px; }
+
+/* Cartões da página inicial */
+.md-typeset .grid.cards > ul > li { border-top: 3px solid var(--cs-verde); }
+
+/* Vídeo */
+.md-typeset .video { position: relative; aspect-ratio: 16/9; border-radius: 8px; overflow: hidden;
+  background: #10282a; color: #fff; display: flex; flex-direction: column; gap: .3em;
+  align-items: center; justify-content: center; text-align: center; margin: 0 0 1.4em; padding: 1em; }
+.md-typeset .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.md-typeset .video p { margin: 0; opacity: .85; font-size: .8rem; }
+
+/* Botão PDF e data de atualização */
+.cs-acoes { float: right; margin: .2rem 0 .5rem 1rem; }
+.md-typeset .cs-pdf, .cs-pdf { font-size: .68rem; padding: .35em .9em; display: inline-flex; gap: .35em; align-items: center; }
+.cs-pdf svg { width: 1.2em; height: 1.2em; fill: currentColor; }
+.cs-atualizado { margin-top: 2.5rem; font-size: .7rem; color: var(--md-default-fg-color--light);
+  border-top: 1px solid var(--md-default-fg-color--lightest); padding-top: .8rem; }
+.cs-cabecalho-impressao { display: none; }
+
+/* ---------- Impressão / Salvar em PDF ---------- */
+@media print {
+  @page { size: A4; margin: 16mm 14mm; }
+  .md-header, .md-tabs, .md-sidebar, .md-footer, .md-top, .cs-acoes,
+  .md-content__button, .headerlink, .md-search { display: none !important; }
+  .md-main__inner, .md-content, .md-content__inner { margin: 0 !important; max-width: none !important; }
+  body { font-size: 11pt; }
+  .cs-cabecalho-impressao { display: flex !important; justify-content: space-between;
+    border-bottom: 2px solid #3AA3A5; padding-bottom: 6px; margin-bottom: 14px; font-size: 9pt; color: #1A1A12; }
+  .md-typeset figure.tela, .md-typeset table, .md-typeset .admonition { break-inside: avoid; }
+  .md-typeset h2, .md-typeset h3 { break-after: avoid; }
+  .md-typeset .video { display: none; }
+  .md-typeset figure.tela img { box-shadow: none; }
+}
+
+/* Passo com marcador numerado: o círculo substitui o número da lista */
+.md-typeset ol > li:has(> .n:first-child) { list-style: none; margin-left: -.4em; }
+
+/* Cabeçalho branco com a logo Carsoft colorida */
+.md-header { background: #fff; color: #1A1A12; box-shadow: 0 1px 0 rgba(0,0,0,.08); }
+.md-header__button.md-logo img { height: 1.7rem; width: auto; }
+.md-header__title { font-weight: 600; }
+.md-header .md-search__input { background: #EEF4F4; color: #1A1A12; }
+.md-header .md-search__input::placeholder, .md-header .md-search__icon { color: #4a5556; }
+.md-tabs { background: #fff; color: #1A1A12; border-bottom: 1px solid rgba(0,0,0,.08); }
+.md-tabs__link { opacity: .75; }
+.md-tabs__item--active .md-tabs__link, .md-tabs__link:hover { color: #2B7E80; opacity: 1; }
+[data-md-color-scheme="slate"] .md-header, [data-md-color-scheme="slate"] .md-tabs { background: #fff; }
+@media screen and (max-width: 76.2344em) {
+  .md-header .md-search__input { background: transparent; }
+}
