@@ -59,10 +59,10 @@ def selo(im):
 
 def marcar(im, marcas):
     d = ImageDraw.Draw(im)
-    r = 22
+    r = 15
     for m in marcas:
-        x, y, w, h = m["box"]; p = 8
-        d.rounded_rectangle([x - p, y - p, x + w + p, y + h + p], 10, outline=LARANJA, width=5)
+        x, y, w, h = m["box"]; p = 5
+        d.rounded_rectangle([x - p, y - p, x + w + p, y + h + p], 10, outline=LARANJA, width=4)
         # círculo no canto superior direito (padrão) ou à esquerda/direita ("lado")
         lado = m.get("lado", "canto")
         if lado == "esq": cx, cy = x - p - r - 8, y + h / 2
@@ -70,8 +70,8 @@ def marcar(im, marcas):
         else: cx, cy = x + w + p, y - p
         cx = min(max(cx, r + 4), im.width - r - 4); cy = max(cy, r + 4)
         d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=VERDE, outline="white", width=3)
-        t = str(m["n"]); f = fonte("Bold", 26); tw = d.textlength(t, font=f)
-        d.text((cx - tw / 2, cy - 16), t, font=f, fill="white")
+        t = str(m["n"]); f = fonte("Bold", 19); tw = d.textlength(t, font=f)
+        d.text((cx - tw / 2, cy - 12), t, font=f, fill="white")
     return im
 
 def gerar(spec, base):

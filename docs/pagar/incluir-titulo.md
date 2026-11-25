@@ -27,11 +27,11 @@ O vídeo do YouTube entra aqui, no lugar deste quadro.
 
 1. <span class="n">1</span> Abra a [Manutenção de Contas a Pagar](index.md#como-abrir-a-tela) e clique em **Incluir** (ou ++alt+i++). O modo muda para **Incluindo** e o sistema atribui o número do título.
 2. <span class="n">2</span> Em **Valor Principal**, digite o valor (ex.: 150,00) e pressione ++tab++. Moeda, Parcelas (1) e Mês/Ano de competência já vêm preenchidos.
-3. <span class="n">3</span> Em **Credor/Fornecedor**, clique na lupa. Na pesquisa, digite parte do nome em **Valor Campo** ou procure na lista e dê **duplo clique** no credor. O Favorecido Cheque é preenchido sozinho.
-4. <span class="n">4</span> O **Vencimento Original** vem com a data de hoje. Para mudar, clique na setinha e escolha o dia no calendário. O Vencimento Programado acompanha.
-5. <span class="n">5</span> Em **Conta Financeira**, clique na lupa e dê duplo clique na conta (ex.: 146).
-6. <span class="n">6</span> Em **Conta Débito**, ao lado de Moeda, clique na lupa e dê duplo clique na conta contábil (ex.: 2614 ASSINATURAS).
-7. <span class="n">7</span> Em **Histórico**, clique na lupa e dê duplo clique no histórico padrão (ex.: 006 PAGTO REF.).
+3. <span class="n">3</span> Em **Credor/Fornecedor**, clique no ícone verde de pesquisa, à direita do campo. Na pesquisa, digite parte do nome em **Valor Campo** ou procure na lista e dê **duplo clique** no credor. O Favorecido Cheque é preenchido sozinho.
+4. <span class="n">4</span> Em **Vencimento Original**, clique na setinha e escolha o dia no calendário. Ao sair do campo, o Vencimento Programado acompanha.
+5. <span class="n">5</span> Em **Conta Financeira**, clique no ícone verde de pesquisa e dê duplo clique na conta (ex.: 146).
+6. <span class="n">6</span> Em **Conta Débito**, clique no ícone verde de pesquisa e dê duplo clique na conta contábil (ex.: 2614 ASSINATURAS).
+7. <span class="n">7</span> Em **Histórico**, clique no ícone verde de pesquisa e dê duplo clique no histórico padrão (ex.: 006 PAGTO REF.).
 8. <span class="n">8</span> (Opcional: preencha Número da NF, Histórico Complementar 1 etc.) Clique em **Ok** para gravar.
 
 ## Depois de gravar

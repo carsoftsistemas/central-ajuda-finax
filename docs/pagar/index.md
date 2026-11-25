@@ -10,15 +10,19 @@ O módulo **Contas a Pagar** guarda as despesas da empresa (os **títulos**) e c
 
 ## Como abrir a tela
 
-<figure class="tela" markdown>
-![Tela principal do Finax com o ícone Contas à Pagar e o menu Pagar destacados](../img/pagar/abrir-tela.png)
-<figcaption>Os dois caminhos para abrir a Manutenção de Contas a Pagar.</figcaption>
-</figure>
-
 Há dois caminhos:
 
 1. <span class="n">1</span> Na tela principal, aba **Principal** (ou aba **Contas à Pagar**), clique no ícone **Contas à Pagar**.
+
+<figure class="tela" markdown>
+![Tela principal do Finax com o ícone Contas à Pagar destacado](../img/pagar/abrir-tela-icone.png)
+</figure>
+
 2. <span class="n">2</span> Ou, no menu superior, clique em **Pagar > Manutenção de contas a pagar**.
+
+<figure class="tela" markdown>
+![Menu Pagar aberto com a opção Manutenção de contas a pagar destacada](../img/pagar/abrir-tela-menu.png)
+</figure>
 
 A tela abre em modo **Consultando** (somente leitura). A parte de baixo da janela mostra o modo atual: **Consultando**, **Incluindo** ou **Editando**. Para fechar, use o botão **Sair** ou o X da janela.
 

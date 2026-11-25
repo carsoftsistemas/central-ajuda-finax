@@ -6,9 +6,9 @@ versao: 8.3.8.7
 
 # Dicas e atalhos
 
-## Pesquisas (lupas)
+## Pesquisas
 
-Em todas as listas de pesquisa (credor, conta, histórico), dê **duplo clique** na linha para escolher o item. Você pode digitar parte do nome em **Valor Campo** e usar "Iniciando com" ou "Que contenha".
+O **ícone verde** à direita de um campo abre a pesquisa; o ícone amarelo com **+** abre o cadastro para incluir um item novo. Em todas as listas de pesquisa (credor, conta, histórico), dê **duplo clique** na linha para escolher o item. Você pode digitar parte do nome em **Valor Campo** e usar "Iniciando com" ou "Que contenha".
 
 ## Campos de valor e quantidade
 
